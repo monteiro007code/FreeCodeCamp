@@ -44,17 +44,39 @@
 
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo"></form>
-
-        <label><input type="radio" id="Indoor">Indoor</label>
+        <fieldset>
+            
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input type="radio" id="Indoor" checked>Indoor</label>
         <label><input id="outdoor" type="radio">Outdoor</label>
+
+        </fieldset>
+        
         <input type="text"name  = catphotourl placeholder= "cat photo URL" required> 
         <button type="submit">Submit</button>
 
-       
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
 
-    </section>
+            <input id="Loving" type="checkbox" name="personality" checked>
+            <label for="loving">Loving</label>
+
+            <input id="lazy" type="checkbox" name="personality">
+            <label for="lazy">Lazy</label>
+
+            <input id="energetic" type="checkbox" name="personality">
+            <label for="energetic">Energetic</label>
+            
+        </fieldset>
+
+     </section>
 
 
         </main>
+        <footer>
+            <p>
+                No Copyright - <a href=https://www.freecodecamp.org>freeCodeCamp.org</a>
+            </p>
+        </footer>
     </body>
 </html>
